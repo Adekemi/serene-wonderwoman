@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fefefe;
+    font-family: 'Nunito', sans-serif;
+    color: #333333;
+    font-size: 16px;
+
+}
+
+/* Heading Title */
+
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(img/header-img.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+}
+
+.title-header {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    color: #ffff;
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    top: 15%;
+
+}
+
+/* Rooms Grid */
+
+.title-main {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+    font-size: 25px;
+    font-weight: 300;
+    color: #333333;
+}
+
+
+.container {
+    margin: 0 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+    
+}
+.box img {
+    width: 100%;
+}
+
+.box {
+    margin-bottom: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+    
+}
+
+.box-info {
+    text-align: left;
+    margin: 30px 0;
+    
+}
+
+.box-info h3 {
+    font-size: 20px;
+;
+}
+
+.box-info p {
+    font-size: 16px;
+    line-height: 25px;
+    margin: 20px 0;
+}
+
+.box-info h4 {
+    margin-bottom: 30px;
+}
+
+/* button */
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    text-transform: uppercase;
+}
+
+.btn {
+    background-color: #96772C;
+    padding: 16px 32px;
+    margin-bottom: 40px;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 760px) {
+    .container {
+        margin: 0 autopx;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        
+    }
+    .title-main {
+        font-size: 20px;
+      
+    }
+
+
+}
+
+@media only screen and (max-width: 570px) {
+    .title-header {
+        font-size: 15px;
+      
+    }
+    .container {
+        margin: 0 auto;
+        padding: 0 10px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .box img {
+        width: 100%;
+    }
+
+    .title-main {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 30px;
+        font-weight: 600;
+        font-size: 20px;
+        color: #333333;
+    }
+
+    
+
+}
